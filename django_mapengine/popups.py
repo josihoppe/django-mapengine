@@ -70,7 +70,6 @@ class ChartPopup(Popup):
         """
         data = super().prepare_data()
         data["chart"] = self.get_chart_options()
-        print(data)
         return data
 
     @abstractmethod

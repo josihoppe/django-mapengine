@@ -73,7 +73,8 @@ function add_popup(layerID) {
           const {chart: {series}} = data;
           const xAxisData = createListByName("key", series[0].data);
           const yAxisData = createListByName("value", series[0].data);
-          console.log(data)
+          console.log(data.chart)
+          console.log(html.chart)
           const option = data["chart"]
           chart.setOption(option);
         }
